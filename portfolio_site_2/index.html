@@ -15,6 +15,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -52,27 +58,98 @@
     <main>
       <section class="intro-section">
         <div class="container">
-          <div class="intro-content">
-            <img
-              src="./assets/images/Profesionele_foto.jpg"
-              alt="Benyamine Qarmoudi"
-              class="profile-photo"
-            />
-            <div class="intro-text">
-              <p>
-                Mijn naam is Benyamine Qarmoudi, ik ben 20 jaar en studeer
-                Netwerkbeheer aan AP Hogeschool. Mijn passie ligt bij
-                IT-infrastructuren, netwerken en cybersecurity. Tijdens mijn
-                opleiding ontwikkel ik technische vaardigheden op het gebied van
-                netwerkconfiguratie, probleemoplossing en systeembeheer.
-              </p>
-              <p>
-                Ik ben leergierig, gedreven en streef ernaar om up-to-date te
-                blijven met de nieuwste technologieën. Mijn doel is om mijn
-                kennis verder uit te breiden en een waardevolle bijdrage te
-                leveren binnen een professioneel IT-team.
-              </p>
+          <div class="row">
+            <!-- Intro Content - Links (8 kolommen) -->
+            <div class="col-12 col-lg-8">
+              <div class="intro-content">
+                <div class="profile-photo-container">
+                  <img
+                    src="./assets/images/Profesionele_foto.jpg"
+                    alt="Benyamine Qarmoudi"
+                    class="profile-photo"
+                  />
+                  <p class="photo-copyright">© 2025 Benyamine Qarmoudi</p>
+                </div>
+                <div class="intro-text">
+                  <p>
+                    Mijn naam is Benyamine Qarmoudi, ik ben 20 jaar en studeer
+                    Netwerkbeheer aan de AP Hogeschool. Al op jonge leeftijd
+                    merkte ik dat technologie mij enorm fascineerde. Wat voor
+                    anderen soms ingewikkeld lijkt, vond ik juist interessant om
+                    te onderzoeken en te begrijpen. Die nieuwsgierigheid groeide
+                    doorheen de jaren uit tot een echte passie voor
+                    IT-infrastructuren, netwerken en cybersecurity. Daarom koos
+                    ik bewust voor een opleiding waarin ik mijn technische
+                    vaardigheden kan ontwikkelen en mijn kennis verder kan
+                    uitbouwen. Tijdens mijn opleiding krijg ik de kans om met
+                    verschillende aspecten van netwerkbeheer aan de slag te
+                    gaan. Ik leer onder andere hoe je netwerken opzet,
+                    configureert en optimaliseert, zowel in kleine omgevingen
+                    als in complexere infrastructuren. Ook het analyseren en
+                    oplossen van netwerkproblemen maakt een belangrijk deel uit
+                    van mijn studies. Daarnaast werk ik met servers, routers,
+                    switches en beveiligingstechnologieën, waardoor ik een breed
+                    inzicht krijg in hoe moderne IT-omgevingen functioneren.
+                    Naast de technische kennis hecht ik veel waarde aan
+                    nauwkeurigheid, verantwoordelijkheid en een gestructureerde
+                    manier van werken. Deze eigenschappen zijn volgens mij
+                    essentieel om betrouwbare en veilige netwerken te kunnen
+                    bouwen en onderhouden. In de snel evoluerende wereld van IT
+                    is het bovendien belangrijk om flexibel en leergierig te
+                    blijven. Daarom probeer ik voortdurend nieuwe technologieën
+                    te ontdekken, documentatie te lezen en eigen projecten op te
+                    zetten om mijn vaardigheden verder aan te scherpen.
+                  </p>
+                  <p>
+                    Cybersecurity vormt een bijzonder interessegebied voor mij.
+                    Ik vind het boeiend om te begrijpen hoe systemen beschermd
+                    worden tegen bedreigingen en hoe je kan anticiperen op
+                    mogelijke risico’s. Het idee dat je mee kan werken aan een
+                    veilige digitale omgeving geeft mij extra motivatie om me
+                    hierin te specialiseren. Mijn uiteindelijke doel is om mijn
+                    kennis en ervaring te blijven uitbreiden en een waardevolle
+                    rol te spelen binnen een professioneel IT-team. Ik wil me
+                    blijven ontwikkelen in een omgeving waar teamwork, innovatie
+                    en verantwoordelijkheid centraal staan. In de toekomst hoop
+                    ik te kunnen bijdragen aan projecten die een echte impact
+                    hebben op de betrouwbaarheid en veiligheid van
+                    IT-infrastructuren, en zo mijn passie om te zetten in een
+                    succesvolle carrière.
+                  </p>
+                </div>
+              </div>
             </div>
+
+            <!-- Sidebar - Rechts (4 kolommen) -->
+            <aside class="col-12 col-lg-4">
+              <div class="sidebar-contact">
+                <h4 class="mb-3">Contact</h4>
+
+                <div class="sidebar-contact-item mb-3">
+                  <h6><i class="bi bi-geo-alt-fill"></i> Adres</h6>
+                  <p class="mb-0">
+                    Ellermanstraat 33<br />
+                    2060 Antwerpen
+                  </p>
+                </div>
+
+                <div class="sidebar-contact-item mb-3">
+                  <h6><i class="bi bi-envelope-fill"></i> Email</h6>
+                  <p class="mb-0">
+                    <a href="mailto:benyamine.qarmoud@ap.student.be">
+                      benyamine.qarmoud@ap.student.be
+                    </a>
+                  </p>
+                </div>
+
+                <div class="sidebar-contact-item">
+                  <h6><i class="bi bi-telephone-fill"></i> Telefoon</h6>
+                  <p class="mb-0">
+                    <a href="tel:+32485727420">+32 485 72 74 20</a>
+                  </p>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
@@ -81,12 +158,21 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="d-flex justify-content-center">
+        <div
+          class="d-flex justify-content-center flex-column align-items-center"
+        >
           <img
             src="./assets/images/logo.png"
             alt="Benyamine Qarmoudi Logo"
             class="footer-logo"
           />
+          <p class="logo-copyright">© 2025 Benyamine Qarmoudi</p>
+          <p class="mb-0 mt-2">
+            © 2025
+            <a href="mailto:benyamine.qarmoud@ap.student.be" class="footer-name"
+              >Benyamine Qarmoudi</a
+            >. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
