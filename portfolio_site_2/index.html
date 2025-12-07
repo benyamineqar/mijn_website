@@ -46,7 +46,7 @@
           </a>
 
           <div class="navbar-nav mx-auto">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
             <a class="nav-link" href="portfolio.html">Projecten</a>
             <a class="nav-link btn-contact" href="contact.html">Contact</a>
           </div>
@@ -166,9 +166,9 @@
             alt="Benyamine Qarmoudi Logo"
             class="footer-logo"
           />
-          <p class="logo-copyright">© 2025 Benyamine Qarmoudi</p>
+          <p class="logo-copyright">© 2024 Benyamine Qarmoudi</p>
           <p class="mb-0 mt-2">
-            © 2025
+            © 2024
             <a href="mailto:benyamine.qarmoud@ap.student.be" class="footer-name"
               >Benyamine Qarmoudi</a
             >. All rights reserved.
@@ -176,5 +176,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Hidden form for Netlify detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="voornaam" />
+      <input type="text" name="achternaam" />
+      <input type="email" name="email" />
+      <textarea name="bericht"></textarea>
+      <div data-netlify-recaptcha="true"></div>
+    </form>
   </body>
 </html>
